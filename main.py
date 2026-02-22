@@ -80,3 +80,8 @@ async def upload_file(
         }
 
     return {"message": "File validated successfully"}
+
+
+@app.get("/")
+def root():
+    return {"message": "FastAPI File Validation Service running"}
